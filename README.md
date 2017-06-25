@@ -2,13 +2,13 @@
 添加桌面快捷方式
 
 **配置权限**
-```
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+```xml
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
 
 ```
 **通过广播添加带有Intent的图标桌面**
-```
+```java
 public class ShortCutUtils {
     /**
      *  添加当活动为启动项
